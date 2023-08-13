@@ -1,10 +1,12 @@
 let div = document.querySelector("div");
+let btn = document.querySelector("button");
 
-function btnSaludo(){
-    alert("Hola");
+divSaludo.addEventListener("click", () => {
+    alert("Hola! Soy el div");
+});
+
+btn.onclick = saludo
+function saludo(){
+    event.stopPropagation();
+    alert("Hola!");
 }
-
-div.addEventListener("click", () => {
-    alert('Hola! Soy el div');
-  });
-
